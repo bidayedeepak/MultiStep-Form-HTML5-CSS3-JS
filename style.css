@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans:wght@100&display=swap");
+body {
+  background-image: url(./images/bgimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDIv {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.regiDiv {
+  font-size: x-large;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.regiBtn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(60, 60, 196);
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.regiBtn:hover {
+  box-shadow: 0px 3px teal;
+  border: 2spx solid #ffff;
+}
+
+.topBarForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.progressCircle {
+  padding: 4px;
+  border: 1px solid #b9b9c3;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.progressCircle.active {
+  background-color: blue;
+}
+
+.progressLines {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #b9b9c3;
+  height: 1px;
+  width: 4rem;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  letter-spacing: 3px;
+}
+
+.formMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 4rem; */
+}
+
+/* ------- step 1 ----------- */
+
+.formData {
+  width: 30%;
+}
+
+.formData .formData1Title {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  color: #242731;
+}
+
+.formData .formData1desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  color: #575f6e;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.formData .formData1alert {
+  font-family: "Montserrat", sans-serif;
+  background-color: #79808f56;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  font-size: x-small;
+  color: #575f6e;
+  padding-bottom: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formData .formData1input {
+  margin-top: 1.2rem;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.616);
+}
+
+.formData .formData1inputtext {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  font-weight: 100;
+}
+
+.numberBox input {
+  border: none;
+  outline: none;
+}
+
+.alertBox span:nth-child(1) {
+  float: right;
+  background-color: blueviolet;
+  width: 10%;
+  color: #007aff;
+}
+
+.alertBox span:nth-child(2) {
+  float: left;
+  width: 90%;
+  font-size: x-small;
+  cursor: pointer;
+  margin-top: 2rem;
+  background-color: aqua;
+}
+
+.phoneNumber input,
+.contryCodeInput select {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.616);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 3px;
+  font-size: 12px;
+  height: 25px;
+}
+
+.phoneNumber input:focus,
+.otpcode input:focus,
+.contryCodeInput select:focus {
+  outline: none;
+  text-decoration: none;
+  outline-width: 0;
+  border-bottom: 1px solid #007aff;
+}
+
+/* ----------- step 1 end--------- */
+
+/* ----------- step 2--------- */
+.formData .formData2Title {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  color: #242731;
+}
+
+.formData .formData2desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  color: #575f6e;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.formData .formData2alert {
+  font-family: "Montserrat", sans-serif;
+  background-color: #79808f56;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  font-size: x-small;
+  color: #575f6e;
+  padding-bottom: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formData .formData2input {
+  margin-top: 1.2rem;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.616);
+}
+
+.formData .formData2inputtext {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  font-weight: 100;
+  /* background-color: #007aff; */
+  height: 20px;
+  /* width: 60%; */
+  margin-top: 5px;
+  /* padding-top: 5px; */
+}
+
+.otpcode input {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.616);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 3px;
+  font-size: 12px;
+  height: 25px;
+  width: 100%;
+}
+
+.formData2icon {
+  color: #007aff;
+  /* background-color: #575f6e; */
+  width: 10%;
+  float: right;
+  cursor: pointer;
+  /* padding-bottom: 5px; */
+}
+
+.formData2confcodebox {
+  /* background-color: #007aff; */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 70%;
+}
+
+.formData2confcodebox span:nth-child(1) {
+  /* background-color: #242731; */
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+
+.formData2confcodebox span:nth-child(3) {
+  font-size: x-small;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0.1rem;
+  color: #575f6e;
+}
+
+.formData2cnfrm {
+  display: flex;
+  align-items: center;
+}
+
+.formData2confcodeboxright {
+  /* background-color: #007aff; */
+  width: 30%;
+  font-size: x-small;
+  color: #007aff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.formData2confcodeboxright:hover {
+  font-weight: bold;
+}
+
+/* ----------OTP code ----------- */
+#partitioned {
+  padding-left: 15px;
+  letter-spacing: 42px;
+  border: 0;
+  background-image: linear-gradient(
+    to left,
+    black 70%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  width: 220px;
+  /* min-width: 220px; */
+}
+
+#divInner {
+  left: 0;
+  position: sticky;
+}
+
+#divOuter {
+  width: 190px;
+  overflow: hidden;
+}
+/* ----------OTP code end----------- */
+
+/* ----------- step 2 end--------- */
+
+/* ----------- step 3--------- */
+.formData .formData3Title {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  color: #242731;
+}
+
+.formData .formData3desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  color: #575f6e;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.formData .formData3input {
+  margin-top: 1rem;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.616);
+  /* background-color: #007aff; */
+}
+
+.formData .formData3inputtext {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  font-weight: 100;
+  /* background-color: #007aff; */
+  /* height: 20px; */
+  /* width: 60%; */
+  margin-top: 1.2rem;
+  /* padding-top: 5px; */
+  border: 1px solid rgba(128, 128, 128, 0.616);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.formData .formData3inputtext .detailsForm {
+  padding-top: 10px;
+}
+
+.formData .formData3inputtext .passwordStrength {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.notnullactive {
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+.weakactive {
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+.mediumactive {
+  display: block;
+  color: #458f45;
+  font-weight: bold;
+}
+
+.strongactive {
+  display: block;
+  color: rgb(4, 255, 4);
+  font-weight: bold;
+}
+
+.cnfrmpassmatchactive {
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+.passmatchactive {
+  display: block;
+  color: rgb(4, 255, 4);
+  font-weight: bold;
+}
+
+.formData .formData3inputtext .passwordStrength .notnull {
+  display: none;
+}
+
+.formData .formData3inputtext .passwordStrength .weak {
+  display: none;
+}
+
+.formData .formData3inputtext .passwordStrength .medium {
+  display: none;
+}
+
+.formData .formData3inputtext .passwordStrength .strong {
+  display: none;
+}
+
+.formData .formData3inputtext .passwordStrength .cnfrmpassmatch {
+  display: none;
+}
+
+.formData .formData3inputtext .passwordStrength .passmatch {
+  display: none;
+}
+
+/* ----------- step 3 end--------- */
+
+/* ------------ step 4 ----------- */
+.personaldatadesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.personaldatadesc span:nth-child(1) {
+  font-size: small;
+  font-weight: 600;
+}
+
+.personaldatadesc span:nth-child(2) {
+  font-size: xx-small;
+  width: 100%;
+  color: #575f6e;
+}
+
+.formData .formData4personalinfo {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  font-weight: 100;
+  /* background-color: #007aff; */
+  /* height: 20px; */
+  /* width: 60%; */
+  margin-top: 1.2rem;
+  /* padding-top: 5px; */
+  border: 1px solid rgba(128, 128, 128, 0.616);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.formData .formData4personalinfo .detailsForm4 {
+  margin-top: 10px;
+}
+
+.dataplace {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.formData .formData4personalinfo .detailsForm4date {
+  width: 45%;
+}
+
+.formData .formData4personalinfo .detailsForm4place {
+  width: 45%;
+}
+.agreeinfo {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.agreeinfo span:nth-child(2) {
+  font-size: x-small;
+  font-family: "Montserrat", sans-serif;
+}
+.agreeinfo span:nth-child(2) a {
+  color: #007aff;
+}
+.agreeinfo span:nth-child(2) a:hover {
+  font-weight: bold;
+}
+/* ------------ step 4 end ----------- */
+/* ------------ step 5 ----------- */
+.socialdatadesc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.socialdatadesc span:nth-child(1) {
+  font-size: small;
+  font-weight: 600;
+}
+
+.socialdatadesc span:nth-child(2) {
+  font-size: xx-small;
+  width: 100%;
+  color: #575f6e;
+}
+
+.otpcode select {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  /* background-color: #007aff; */
+}
+
+.otpcode select:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.formData .formData4personalinfo .detailsForm4social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /* background-color: #007aff; */
+}
+
+.formData .formData4personalinfo .detailsForm4id {
+  width: 90%;
+}
+
+.socalicons {
+  display: flex;
+  opacity: 0.2;
+  align-items: center;
+  justify-items: center;
+  /* background-color: #007aff; */
+  width: 15%;
+  height: 100%;
+}
+
+.fb {
+  display: none;
+}
+
+.insta {
+  display: none;
+}
+
+.twitter {
+  display: none;
+}
+
+.skype {
+  display: none;
+}
+
+.fbactive {
+  display: block;
+}
+
+.instaactive {
+  display: block;
+}
+
+.twitteractive {
+  display: block;
+}
+
+.skypeactive {
+  display: block;
+}
+
+/* ------------ step 5 end ----------- */
+
+/* ----- step 6 ----------- */
+.otpcode textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.616);
+}
+
+.otpcode textarea:focus {
+  border-bottom: 1px solid #007aff;
+}
+/* ----- step 6 end ----------- */
+
+/* ----- step 7 ----------- */
+.formData .final {
+  display: flex;
+  flex-direction: column;
+  /* font-size: larger; */
+  /* font-weight: bolder; */
+  font-family: "Montserrat", sans-serif;
+  color: #242731;
+}
+
+.formData .final span:nth-child(1) {
+  font-size: xx-large;
+  color: green;
+}
+
+.formData .final span:nth-child(2) {
+  font-size: small;
+}
+/* ----- step 7 end ----------- */
+
+/* ---------- registration form -------------- */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1.5rem;
+  width: 50%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.close-button {
+  cursor: pointer;
+  color: rgba(87, 87, 87, 0.685);
+}
+
+.close-button:hover {
+  color: rgb(65, 61, 61);
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.2);
+  transform: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/* ---------- registration form end -------------- */
+
+/* ----multistep---------- */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.next-btn,
+.previous-btn,
+.submit-btn {
+  background-color: #575f6e67;
+  float: right;
+  text-align: center;
+  margin-top: 1.2rem;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: x-small;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid rgba(128, 128, 128, 0.616);
+}
+
+.previous-btn {
+  float: left;
+}
+.allbtn {
+  width: 20%;
+  padding: 7px;
+}
+
+/* ----multistep end---------- */

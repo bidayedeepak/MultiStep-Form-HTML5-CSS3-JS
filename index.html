@@ -1,0 +1,471 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="mainDiv">
+        <div class="regiDiv">Register for more details.</div>
+        <div>
+          <div class="trigger regiBtn">Register</div>
+        </div>
+      </div>
+      <!-- ----------- Registration from ----------- -->
+      <div class="modal">
+        <div class="modal-content">
+          <div class="topBarForm">
+            <div class="logo">
+              <span>LOGO</span>
+            </div>
+            <!-- <div class="progress">
+              <span><div class="progressCircle"></div></span>
+              <span><div class="progressLines"></div></span>
+              <span><div class="progressCircle"></div></span>
+              <span><div class="progressLines"></div></span>
+              <span><div class="progressCircle"></div></span>
+            </div> -->
+            <div class="close-button">
+              <i class="fa-solid fa-xmark fa-2x"></i>
+            </div>
+          </div>
+          <form action="#">
+            <div class="formMain">
+              <!-- ------- step 1 ---------- -->
+              <div class="step step-1 active formData">
+                <div class="formData1Title"><span>Registration</span></div>
+                <div class="formData1desc">
+                  <span
+                    >Fill in the registration data. It will take a couple of
+                    minutes. All you need is a phone number and e-mail.</span
+                  >
+                </div>
+                <div class="formData1alert">
+                  <span>
+                    <i class="fa-solid fa-lock fa-2x"></i>
+                  </span>
+                  <span
+                    >We take privacy issues seriously. You can be sure that your
+                    personal data is securely protected.</span
+                  >
+                </div>
+                <div class="formData1input">
+                  <div class="formData1inputtext">
+                    <span>Enter your phone number</span>
+                  </div>
+                  <div>
+                    <span class="contryCodeInput">
+                      <select name="countryCode" id="countryCode">
+                        <option value="+1">+91</option>
+                        <option value="+1">+93</option>
+                        <option value="+1">+355</option>
+                        <option value="+1">+213</option>
+                        <option value="+1">+376</option>
+                        <option value="+1">+244</option>
+                        <option value="+1">+672</option>
+                        <option value="+1">+54</option>
+                        <option value="+1">+61</option>
+                        <option value="+1">+43</option>
+                      </select>
+                    </span>
+                    <span class="phoneNumber">
+                      <input
+                        type="text"
+                        name="phoneNumber1"
+                        id="phoneNumber1"
+                        maxlength="10"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div class="next-btn allbtn">Send Code</div>
+              </div>
+              <!-- ------- step 1 end ---------- -->
+              <!-- ------- step 2 ---------- -->
+              <div class="step step-2 formData">
+                <div class="formData2Title"><span>Registration</span></div>
+                <div class="formData2desc">
+                  <span
+                    >Fill in the registration data. It will take a couple of
+                    minutes. All you need is a phone number and e-mail.</span
+                  >
+                </div>
+                <div class="formData2alert">
+                  <span>
+                    <i class="fa-solid fa-lock fa-2x"></i>
+                  </span>
+                  <span
+                    >We take privacy issues seriously. You can be sure that your
+                    personal data is securely protected.</span
+                  >
+                </div>
+                <div class="formData2input">
+                  <div>
+                    <span class="otpcode">
+                      <input
+                        type="text"
+                        name="phoneNumber2"
+                        id="phoneNumber2"
+                        maxlength="10"
+                        readonly
+                      />
+                    </span>
+                  </div>
+                  <div class="formData2inputtext">
+                    <span>Number not confirmed yet!</span>
+                    <div class="formData2icon">
+                      <i class="fa-solid fa-pencil fa-2x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="formData2cnfrm">
+                  <div class="formData2confcodebox">
+                    <span>Confirmation code</span>
+                    <span class="otpcode">
+                      <div id="divOuter">
+                        <div id="divInner">
+                          <input id="partitioned" type="text" maxlength="4" />
+                        </div>
+                      </div>
+                    </span>
+                    <span
+                      >Confirm phone number with code from SMS message.</span
+                    >
+                  </div>
+                  <div class="formData2confcodeboxright">
+                    <span><i class="fa-solid fa-arrow-rotate-right"></i></span>
+                    <span>Send again</span>
+                  </div>
+                </div>
+                <div class="next-btn allbtn">Confirm</div>
+                <div class="previous-btn allbtn">Back</div>
+              </div>
+              <!-- ------- step 2 end ---------- -->
+              <!-- ------- step 3 ---------- -->
+              <div class="step step-3 formData">
+                <div class="formData3Title"><span>Registration</span></div>
+                <div class="formData3desc">
+                  <span
+                    >Fill in the registration data. It will take a couple of
+                    minutes. All you need is a phone number and e-mail.</span
+                  >
+                </div>
+                <div class="formData3input">
+                  <div>
+                    <span class="otpcode">
+                      <input
+                        type="text"
+                        name="phoneNumber2"
+                        id="phoneNumber3"
+                        maxlength="10"
+                        readonly
+                      />
+                    </span>
+                  </div>
+                  <div class="formData2inputtext">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <span>Number confirmed.</span>
+                  </div>
+                </div>
+                <div class="formData3inputtext">
+                  <div class="detailsForm">
+                    <span>Enter your e-mail</span>
+                    <span class="otpcode"><input type="email" /></span>
+                  </div>
+                  <div class="detailsForm">
+                    <span>Set a password</span>
+                    <span class="otpcode"
+                      ><input type="password" id="password"
+                    /></span>
+                  </div>
+                  <div class="detailsForm">
+                    <span>Confirm password</span>
+                    <span class="otpcode"
+                      ><input type="password" id="confirmpassword"
+                    /></span>
+                  </div>
+                  <div class="passwordStrength">
+                    <div>
+                      <span class="passmatch" id="passmatch"
+                        ><i class="fa-solid fa-check"></i> Password machted.
+                      </span>
+                      <span class="cnfrmpassmatch" id="cnfrmpassmatch"
+                        ><i class="fa-solid fa-circle-exclamation"></i> Password
+                        should match.
+                      </span>
+                      <span class="notnull" id="notnull"
+                        ><i class="fa-solid fa-circle-exclamation"></i> Please
+                        enter password.
+                      </span>
+                      <span class="weak" id="weak"
+                        ><i class="fa-solid fa-check"></i> Bad password.
+                      </span>
+                      <span class="medium" id="medium"
+                        ><i class="fa-solid fa-check"></i>
+                        Good password.
+                      </span>
+                      <span class="strong" id="strong"
+                        ><i class="fa-solid fa-check"></i>
+                        Strong password.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-btn registerNow">Register Now</div>
+                <div class="previous-btn allbtn">Back</div>
+              </div>
+              <!-- ------- step 3 end ---------- -->
+              <!-- ------- step 4 ---------- -->
+              <div class="step step-4 formData">
+                <div class="formData3Title"><span>Profile info</span></div>
+                <div class="formData3desc">
+                  <span
+                    >Fill in the registration data. It will take a couple of
+                    minutes. You only need a passport.</span
+                  >
+                </div>
+                <div class="agreeinfo">
+                  <span><input type="checkbox" name="terms" id="terms" /></span>
+                  <span>I agree with <a href="#">Terms of use</a> </span>
+                </div>
+                <div class="formData4personalinfo">
+                  <div class="personaldatadesc">
+                    <span>Personal data</span>
+                    <span>Specify exactly as your passport.</span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>First name</span>
+                    <span class="otpcode"
+                      ><input type="text" id="fname"
+                    /></span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>Middle name (Optional)</span>
+                    <span class="otpcode"
+                      ><input type="text" id="mname"
+                    /></span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>Last name</span>
+                    <span class="otpcode"
+                      ><input type="text" id="lname"
+                    /></span>
+                  </div>
+
+                  <div class="dataplace">
+                    <div class="detailsForm4date">
+                      <span>Date of birth</span>
+                      <span class="otpcode"
+                        ><input type="date" id="bdate"
+                      /></span>
+                    </div>
+                    <div class="detailsForm4place">
+                      <span>Place of birth</span>
+                      <span class="otpcode"
+                        ><input type="text" id="place"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="formData3input">
+                  <div>
+                    <span class="otpcode">
+                      <input
+                        type="text"
+                        name="phoneNumber2"
+                        id="phoneNumber3"
+                        maxlength="10"
+                      />
+                    </span>
+                  </div>
+                  <div class="formData2inputtext">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <span>Your ITIN.</span>
+                  </div>
+                </div>
+                <div class="next-btn registerNow">
+                  Go Next&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="previous-btn allbtn">Back</div>
+              </div>
+              <!-- ------- step 4 end ---------- -->
+              <!-- ------- step 5 ---------- -->
+              <div class="step step-5 formData">
+                <div class="formData3Title"><span>Profile info</span></div>
+                <div class="formData3desc">
+                  <span
+                    >Fill in the registration data. It will take a couple of
+                    minutes. You only need a passport.</span
+                  >
+                </div>
+                <div class="formData4personalinfo">
+                  <div class="personaldatadesc">
+                    <span>Contacts</span>
+                    <span>These contacts used to inform about orders</span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>E-mail</span>
+                    <span class="otpcode">
+                      <input type="email" />
+                    </span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>contact</span>
+                    <span class="otpcode"
+                      ><input type="text" id="contact"
+                    /></span>
+                  </div>
+                  <div class="socialdatadesc">
+                    <span>Social Networks (Optional)</span>
+                    <span>Indicate the desired communication method.</span>
+                  </div>
+                  <div class="dataplace">
+                    <div class="detailsForm4social">
+                      <div class="socalicons">
+                        <span class="fb" id="fb">
+                          <i class="fa-brands fa-facebook fa-2x"></i>
+                        </span>
+                        <span class="insta" id="insta">
+                          <i class="fa-brands fa-instagram fa-2x"></i>
+                        </span>
+                        <span class="twitter" id="twitter">
+                          <i class="fa-brands fa-twitter fa-2x"></i>
+                        </span>
+                        <span class="skype" id="skype">
+                          <i class="fa-brands fa-skype fa-2x"></i>
+                        </span>
+                      </div>
+                      <span class="otpcode">
+                        <select
+                          name="socialsites"
+                          id="socialsites"
+                          onclick="icons()"
+                        >
+                          <option value="Facebook">Facebook</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Twitter">Twitter</option>
+                          <option value="Skype">Skype</option>
+                        </select>
+                      </span>
+                    </div>
+                    <div class="detailsForm4id">
+                      <span class="otpcode"
+                        ><input type="text" id="socialid" placeholder="ID"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-btn registerNow">
+                  Go Next&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="previous-btn allbtn">Back</div>
+              </div>
+              <!-- ------- step 5 end ---------- -->
+              <!-- ------- step 6 ---------- -->
+              <div class="step step-6 formData">
+                <div class="formData3Title"><span>Profile info</span></div>
+                <div class="formData3desc">
+                  <span
+                    >Fill in the data for profile. It will take a couple of
+                    minutes. You only need a passport.</span
+                  >
+                </div>
+                <div class="formData4personalinfo">
+                  <div class="personaldatadesc">
+                    <span>Delivery address</span>
+                    <span>Used for shipping orders</span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>Address</span>
+                    <span class="otpcode">
+                      <input type="text" />
+                    </span>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>City</span>
+                    <span class="otpcode"
+                      ><input type="text" id="contact"
+                    /></span>
+                  </div>
+                  <!-- <div class="socialdatadesc">
+                    <span>Social Networks (Optional)</span>
+                    <span>Indicate the desired communication method.</span>
+                  </div> -->
+                  <div class="dataplace">
+                    <div class="detailsForm4social">
+                      <!-- <div class="socalicons">
+                        <span class="fb" id="fb">
+                          <i class="fa-brands fa-facebook fa-2x"></i>
+                        </span>
+                        <span class="insta" id="insta">
+                          <i class="fa-brands fa-instagram fa-2x"></i>
+                        </span>
+                        <span class="twitter" id="twitter">
+                          <i class="fa-brands fa-twitter fa-2x"></i>
+                        </span>
+                        <span class="skype" id="skype">
+                          <i class="fa-brands fa-skype fa-2x"></i>
+                        </span>
+                      </div> -->
+                      <!-- <span class="otpcode">
+                        <select name="socialsites" id="socialsites">
+                          <option value="Facebook">Facebook</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Twitter">Twitter</option>
+                          <option value="Skype">Skype</option>
+                        </select>
+                      </span> -->
+                      <div class="detailsForm4id">
+                        <span>Country</span>
+                        <span class="otpcode"
+                          ><input type="text" id="socialid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="detailsForm4id">
+                      <span>Zip code</span>
+                      <span class="otpcode"
+                        ><input type="text" id="socialid"
+                      /></span>
+                    </div>
+                  </div>
+                  <div class="detailsForm4">
+                    <span>Optional</span>
+                    <span class="otpcode">
+                      <textarea
+                        name="optional"
+                        id="optional"
+                        cols="30"
+                        rows="5"
+                      ></textarea>
+                    </span>
+                  </div>
+                </div>
+                <div class="next-btn allbtn">Submit</div>
+                <div class="previous-btn allbtn">Back</div>
+              </div>
+              <!-- ------- step 6 end ---------- -->
+              <!-- ------- step 7 ---------- -->
+              <div class="step step-7 formData">
+                <div class="final">
+                  <span>Thank you.</span>
+                  <span>You information has been submitted successfully.</span>
+                </div>
+              </div>
+              <!-- ------- step 7 end ---------- -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./jscript.js"></script>
+  </body>
+</html>
